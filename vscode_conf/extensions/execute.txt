@@ -1,0 +1,6 @@
+# Windows
+.\vscode_ext.ps1
+
+# Linux, macOS, WSL
+chmod +x vscode_ext..sh
+./vscode_ext.sh

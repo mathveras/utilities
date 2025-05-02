@@ -1,0 +1,22 @@
+# Core Extensions
+ms-python.python          # Python
+ms-toolsai.jupyter        # Jypyter
+esbenp.prettier-vscode    # Prettier
+charliermarsh.ruff        # Ruff
+
+# Web Development
+ritwickdey.LiveServer     # LiveServer
+dbaeumer.vscode-eslint    # JavaScript linting
+
+# Themes
+vscode-icons-team.vscode-icons    # vscode-icons
+dhedgecock.radical-vscode         # Radical Theme
+# rocketseat.theme-omni           # Omni Theme
+# dracula-theme.theme-dracula     # Dracula Theme
+
+# Optional
+njpwerner.autodocstring                  # autoDocstring
+firefox-devtools.vscode-firefox-debug    # Debugger for Firefox
+davidanson.vscode-markdownlint           # markdownlint
+# ms-vscode.powershell                   # PowerShell
+# mechatroner.rainbow-csv                # Rainbow CSV
