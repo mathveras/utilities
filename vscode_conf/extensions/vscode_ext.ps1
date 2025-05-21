@@ -1,13 +1,14 @@
-# Windows (Not Yet Tested)
+# Windows
+## It works, but the 'Optional' extensions from 'extensions.txt' are not being installed for some reason.
 
 $extensionsFile = "extensions.txt"
 
 if (-not (Test-Path $extensionsFile)) {
-    Write-Host "❌ Error: '$extensionsFile' not found!"
+    Write-Host "Error: '$extensionsFile' not found!"
     exit 1
 }
 
-Write-Host "⚙️ Starting VS Code extensions installation..."
+Write-Host "Starting VS Code extensions installation..."
 
 Get-Content $extensionsFile | ForEach-Object {
     # Skips comments and empty lines
@@ -16,7 +17,7 @@ Get-Content $extensionsFile | ForEach-Object {
     # Extracts extension IDs
     $extId = ($_ -replace "#.*", "").Trim()
 
-    Write-Host "🔧 Installing: $extId" -ForegroundColor Yellow
+    Write-Host "Installing: $extId" -ForegroundColor Yellow
 
     # Filters unwanted VS Code CLI messages
     $output = code --install-extension $extId 2>&1 | ForEach-Object {
@@ -30,8 +31,8 @@ Get-Content $extensionsFile | ForEach-Object {
 
     # Checks exit code
     if ($LASTEXITCODE -ne 0) {
-        Write-Host "❌ Failed: $extId" -ForegroundColor Red
+        Write-Host "Failed: $extId" -ForegroundColor Red
     }
 }
 
-Write-Host "✅ Done! Check above for any errors."
+Write-Host "Done! Check above for any errors."

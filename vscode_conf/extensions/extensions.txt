@@ -15,8 +15,8 @@ dhedgecock.radical-vscode         # Radical Theme
 # dracula-theme.theme-dracula     # Dracula Theme
 
 # Optional
-# njpwerner.autodocstring                  # autoDocstring
-# firefox-devtools.vscode-firefox-debug    # Debugger for Firefox
-# davidanson.vscode-markdownlint           # markdownlint
 # ms-vscode.powershell                     # PowerShell
 # mechatroner.rainbow-csv                  # Rainbow CSV
+# davidanson.vscode-markdownlint           # markdownlint
+# njpwerner.autodocstring                  # autoDocstring
+# firefox-devtools.vscode-firefox-debug    # Debugger for Firefox

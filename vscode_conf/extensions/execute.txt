@@ -1,6 +1,7 @@
-# Windows
+# --- Windows ---
 .\vscode_ext.ps1
+(If execution policy is disabled use 'SetExecution-Policy Unrestricted' in PowerShell)
 
-# Linux, macOS, WSL
-chmod +x vscode_ext..sh
+# --- Linux, macOS, WSL ---
+chmod +x vscode_ext.sh
 ./vscode_ext.sh
